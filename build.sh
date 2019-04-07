@@ -15,7 +15,9 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     ./configure \
         CFLAGS="-march=native -O2 -Ofast -flto -DUSE_ASM -pg" \
         --with-crypto=/usr/local/opt/openssl \
-        --with-curl=/usr/local/opt/curl
+        --with-curl=/usr/local/opt/curl \
+        --disable-static 
+
     make -j4
     strip cpuminer
     exit 0
