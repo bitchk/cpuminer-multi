@@ -4,18 +4,20 @@
 
 	"api-bind" : "127.0.0.1:4048",
 
-	"url" : "stratum+tcp://yiimp.ccminer.org:4252",
-	"user" : "benchmark",
-	"pass" : "d=0.024",
+	"url" : "http://127.0.0.1:13802",
+	"user" : "1234567890",
+	"pass" : "1234567890",
 
-	"algo" : "decred",
-	"threads" : 0,
-	"cpu-priority" : 0,
-	"cpu-affinity" : -1,
-
+	"algo" : "x11",
+	"threads" : 1,
+	
 	"benchmark" : false,
 	"debug" : false,
 	"protocol": false,
 	"show-diff": true,
-	"quiet" : false
+	"quiet" : false ,
+	"no-stratum": true,
+	"no-getwork" : true,
+	"no-longpoll": true,
+	"coinbase-addr": "BR74UueR94NMSzQQsH5E8agQaQtMciu7rC"
 }
